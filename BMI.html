@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let height = +prompt("Nhập chiều cao(cm):");
+    let high = height/100;
+    let weight = +prompt("Nhập cân nặng (kg):");
+    let BMI = weight/(high*high)
+    if (BMI > 40) {
+        document.write("Béo phì cấp độ III")
+    }else if (BMI <= 40 && BMI >= 35){
+        document.write("Béo phì cấp độ II")
+    }else if (BMI < 35 && BMI >= 30){
+        document.write("Béo phì cấp độ I")
+    }else if (BMI < 30 && BMI >= 25){
+        document.write("Thừa cân")
+    }else if (BMI < 25 && BMI >= 18.5){
+        document.write("Bình thường")
+    }else if (BMI < 18.5 && BMI >= 17){
+        document.write("Gầy cấp độ I")
+    }else if (BMI < 17 && BMI >= 16){
+        document.write("Gầy cấp độ II")
+    }else if (BMI < 16) {
+        document.write("Gầy cấp độ III")
+    }else {
+        document.write("Giá trị bạn nhập chưa đúng")
+    }
+</script>

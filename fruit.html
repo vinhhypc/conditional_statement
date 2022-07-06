@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Fruit Price !!!</h2>
+   <input type="text" id="fruit" name="fruit">
+   <button onclick="Show()">Show Price</button>
+   <p id="screen"></p>
+</body>
+</html>
+<script>
+    function Show(){
+        let fruit = document.getElementById("fruit").value;
+        switch (fruit) {
+            case "Ổi" :
+            case "Dưa hấu" :
+                document.getElementById("screen").innerHTML = "30000 VNĐ/kg";
+            break;
+            case "Táo" :
+            case "Xoài" :
+                document.getElementById("screen").innerHTML = "30000 VNĐ/kg";
+            break;
+            case "Cam" :
+            case "Chôm chôm" :
+                document.getElementById("screen").innerHTML = "40000 VNĐ/kg";
+            break;
+            case "Măng cụt" :
+                document.getElementById("screen").innerHTML = "50000 VNĐ/kg"; 
+            break;
+            default :
+                alert("Not available !!!")
+    }
+}
+</script>
